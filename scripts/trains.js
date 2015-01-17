@@ -1,8 +1,34 @@
+var today = new Date();
+var hourNow = today.getHours();
+var greeting;
+
+if (hourNow > 18) {
+  greeting = 'Good evening!';
+} else if (hourNow > 12) {
+  greeting = 'Good afternoon!';
+} else if (hourNow > 0) {
+  greeting = 'Good morning!'
+} else {
+  greeting = 'Welcome!'
+}
+
+
 var maximum = 20, minimum = 1;
 var randomNumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 var totalTrains = 20;
 var trainsOperational = randomNumber ;
 var dayOfWeek = new Date(); 
+
+var gotName = false;
+
+while(gotName == false) {
+
+    var userName = prompt("Hello! What's your name?");
+    if (confirm("Is your name really " + userName + "?")) {
+        alert(greeting + " " + userName + "!");
+        gotName = true;
+    }
+}
 
 if (trainsOperational > 0) {
     if (trainsOperational == totalTrains){
