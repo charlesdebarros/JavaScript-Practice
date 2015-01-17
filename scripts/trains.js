@@ -21,6 +21,8 @@ var dayOfWeek = new Date();
 
 var gotName = false;
 
+document.write("<h2>" + "Today's trains situation: " + "</h2>")
+
 while(gotName == false) {
 
     var userName = prompt("Hello! What's your name?");
