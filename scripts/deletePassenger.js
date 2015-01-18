@@ -1,14 +1,15 @@
-function deletePassenger(name, passengerList) {
-    if (passengerList.length == 0) {
-        console.log("There are no entries at the moment.");
+function deletePassenger ( name, list ) {      
+    if (list.length == 0){
+        console.log("List is empty!");
     } else {
-        for (var i = 0; i < passengerList.length; i++) {
-            if(passengerList[i] == name) {
-                list[i] = indefined;
-            } else if (i == passengerList.length - 1){
+        for (var i = 0; i < list.length; i++) {         
+            if(list[i] == name){    
+                list[i] = undefined;
+                return list;
+            } else if (i == list.length - 1) {
                 console.log("Passenger not found!");
             }
         }
     }
-    return passengerList;
+    return list;
 }
