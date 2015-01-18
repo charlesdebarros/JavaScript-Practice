@@ -7,6 +7,15 @@ Li'l projects from various sources, varying from CodeSchool, CodeCademy, among o
 Open the index.html file in your browser of preference.
 To run different JavaScript files, just change the file name in the src="script/file_name".js" and reload the index.html page.
 
+### Scripts written so far:
+
+* eCounter
+* story
+* practice
+* addPassenger
+    * deletePassenger
+* greetings
+
 ### Technologies used: 
 
 * HMTL
