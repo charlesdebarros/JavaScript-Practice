@@ -21,25 +21,25 @@ var dayOfWeek = new Date();
 
 var gotName = false;
 
-document.write("<h2>" + "Today's trains situation: " + "</h2>")
+document.write("<h2>" + "Today's trains situation at the moment: " + "</h2>")
 
-while(gotName == false) {
+// while(gotName == false) {
 
-    var userName = prompt("Hello! What's your name?");
-    if (confirm("Is your name really " + userName + "?")) {
-        alert(greeting + " " + userName + "!");
-        gotName = true;
-    }
-}
+//     var userName = prompt("Hello! What's your name?");
+//     if (confirm("Is your name really " + userName + "?")) {
+//         alert(greeting + " " + userName + "!");
+//         gotName = true;
+//     }
+// }
 
 if (trainsOperational > 0) {
     if (trainsOperational == totalTrains){
         document.write("All trains are operational at this time. Have a great day!" + "<br>");
     } else {
         for (var trainNumber = 1; trainNumber <= totalTrains; trainNumber++) {
-            if (trainNumber <= trainsOperational && trainNumber != 3) {
+            if (trainNumber <= trainsOperational && trainNumber != 0) {
                 document.write("Train # " + trainNumber + " is running." + "<br>");
-            } else if (trainNumber == 8 || trainNumber == 17) {
+            } else if (hourNow == 12 && trainNumber == 8 || trainNumber == 17) {
                 document.write("Train # " + trainNumber + " begins running at noon." + "<br>");
             } else if (trainNumber == 3 && dayOfWeek.getDate() != 0) {
                 document.write("Train # 3 only runs on Sundays." + "<br>");
