@@ -12,6 +12,7 @@ if (hourNow > 18) {
   greeting = 'Welcome!'
 }
 
+document.write("<h2>" + greeting + "</h2>");
 
 var maximum = 20, minimum = 1;
 var randomNumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
@@ -19,18 +20,7 @@ var totalTrains = 20;
 var trainsOperational = randomNumber ;
 var dayOfWeek = new Date(); 
 
-var gotName = false;
-
 document.write("<h2>" + "Today's trains situation at the moment: " + "</h2>")
-
-// while(gotName == false) {
-
-//     var userName = prompt("Hello! What's your name?");
-//     if (confirm("Is your name really " + userName + "?")) {
-//         alert(greeting + " " + userName + "!");
-//         gotName = true;
-//     }
-// }
 
 if (trainsOperational > 0) {
     if (trainsOperational == totalTrains){
