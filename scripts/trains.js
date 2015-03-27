@@ -27,7 +27,7 @@ if (trainsOperational > 0) {
         document.write("All trains are operational at this time. Have a great day!" + "<br>");
     } else {
         for (var trainNumber = 1; trainNumber <= totalTrains; trainNumber++) {
-            if (trainNumber <= trainsOperational && trainNumber != 0) {
+            if (trainNumber <= trainsOperational && trainNumber != 3 && trainNumber != 17) {
                 document.write("Train # " + trainNumber + " is running." + "<br>");
             } else if (hourNow == 12 && trainNumber == 8 || trainNumber == 17) {
                 document.write("Train # " + trainNumber + " begins running at noon." + "<br>");
