@@ -8,12 +8,10 @@ var start = 2;
 
 var applyAndEmpty = function(input, queue){
 	var length = queue.length;
-		for(var i = 1; i < length  ; i++){
-			input = queue.shift()(input);
-		}
-		return input;
+	for(var i = 0; i < length  ; i++){
+		input = queue.shift()(input);
+	}
+	return input;
 };
-
-applyAndEmpty(start, puzzlers);
 
 alert(applyAndEmpty(start, puzzlers));
