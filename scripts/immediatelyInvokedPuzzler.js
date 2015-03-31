@@ -5,4 +5,4 @@ var puzzlers = [
   function(a) { return a % 5; }
 ];
 
-alert(puzzler[puzzler[1](3)](puzzler[3](9)););
+alert(puzzlers[puzzlers[1](3)](puzzlers[3](9)));
