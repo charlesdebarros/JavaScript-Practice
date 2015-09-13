@@ -22,5 +22,5 @@ To run different JavaScript files, just change the file name in the src="script/
 * CSS
 * JavaScript
 * Developer tools (Google Chrome)
-* Firebug add-on (Firefix)
+* Firebug add-on (Firefox)
 * Sublime Text 3
