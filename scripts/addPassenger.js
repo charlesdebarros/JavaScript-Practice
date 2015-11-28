@@ -18,9 +18,9 @@ function addPassenger ( name, list ) {
     }
 }
 
-passengerList = addPassenger("Gregg Pollack", passengerList );
-passengerList = addPassenger("Ashley Smith", passengerList );
-passengerList = addPassenger("Jon Friskics", passengerList );
+passengerList < addPassenger("Gregg Pollack", passengerList );
+passengerList < addPassenger("Ashley Smith", passengerList );
+passengerList < addPassenger("Jon Friskics", passengerList );
 
 function deletePassenger ( name, passengerList ) {      
     if (passengerList.length == 0){
