@@ -23,5 +23,3 @@ function buildTicket (allRides, passRides, pick){
 		}
 	}
 }
-
-ticket();
