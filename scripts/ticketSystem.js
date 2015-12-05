@@ -11,16 +11,15 @@ var wantsRide = "Cedar Coaster";
 buildTicket(parkRides, fastPassQueue, wantsRide)();
 
 function buildTicket (allRides, passRides, pick){
-		if (passRides[0] == pick){
-				var pass = passRides.shift();
-				return function(){alert("Quick! You've got a Fast Pass to " + pass + "!");}; // this function is treated as an expression and being returned directly.
-		} else {
-				for(var i = 0; i < allRides.length; i++){
-						if(allRides[i][0] == pick){
-								return function(){
-									alert("A ticket is priting for " + pick + "!\n" + "Your wait time is about " + allRides[i][1] + " minutes.");
-								};
-						};
-				}
-		};
-};
+	if (passRides[0] == pick){
+		var pass = passRides.shift();
+		return function(){alert("Quick! You've got a Fast Pass to " + pass + "!");}; // this function is treated as an expression and being returned directly.
+	} else {
+		for(var i = 0; i < allRides.length; i++){
+			if(allRides[i][0] == pick){
+				return function(){ alert("A ticket is printing for " + pick + "!\n" + "Your wait time is about " + allRides[i][1] + " minutes.");
+				};
+			}
+		}
+	}
+}

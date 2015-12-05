@@ -7,7 +7,7 @@ function addPassenger ( name, list ) {
         list.push(name);
     } else {
         for (var i = 0; i < list.length; i++) {
-            if(list[i] == undefined){
+            if(list[i] == 'undefined'){
                 list[i] = name;
                 return list;
             } else if (i == list.length - 1) {
@@ -18,9 +18,9 @@ function addPassenger ( name, list ) {
     }
 }
 
-passengerList = addPassenger("Gregg Pollack", passengerList );
-passengerList = addPassenger("Ashley Smith", passengerList );
-passengerList = addPassenger("Jon Friskics", passengerList );
+passengerList < addPassenger("Gregg Pollack", passengerList );
+passengerList < addPassenger("Ashley Smith", passengerList );
+passengerList < addPassenger("Jon Friskics", passengerList );
 
 function deletePassenger ( name, passengerList ) {      
     if (passengerList.length == 0){
@@ -37,6 +37,9 @@ function deletePassenger ( name, passengerList ) {
     }
     return passengerList;
 }
+
+passengerList = deletePassenger("Ashley Smith", passengerList);
+passengerList < addPassenger("Rocio Romain", passengerList);
 
 document.write(passengerList);
 
